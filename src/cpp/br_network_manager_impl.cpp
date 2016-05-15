@@ -16,6 +16,10 @@ std::shared_ptr<biblereader::BrNetworkManager> biblereader::BrNetworkManager::cr
     return std::make_shared<biblereader::BrNetworkManagerImpl>();
 }
 
+biblereader::BrNetworkManagerImpl::BrNetworkManagerImpl() {
+    
+}
+
 size_t writeCallback(char* buf, size_t size, size_t nmemb, void *up) {
     for (int c = 0; c < size*nmemb; c++) {
         ((std::string*)up)->push_back(buf[c]);
