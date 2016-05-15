@@ -1,0 +1,9 @@
+br_network_manager = interface +c {
+  static create(): br_network_manager;
+
+  get_bible_books(listener: br_network_listener): list<string>;
+}
+
+br_network_listener = interface +o +j {
+  complete();
+}
