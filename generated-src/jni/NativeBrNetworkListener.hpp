@@ -33,14 +33,14 @@ private:
         JavaProxy(JniType j);
         ~JavaProxy();
 
-        void complete() override;
+        void complete(const std::shared_ptr<::biblereader::BrBaseViewModel> & view_model) override;
 
     private:
         friend ::djinni::JniInterface<::biblereader::BrNetworkListener, ::djinni_generated::NativeBrNetworkListener>;
     };
 
     const ::djinni::GlobalRef<jclass> clazz { ::djinni::jniFindClass("com/thoughtsofanintrovert/brDjinni/BrNetworkListener") };
-    const jmethodID method_complete { ::djinni::jniGetMethodID(clazz.get(), "complete", "()V") };
+    const jmethodID method_complete { ::djinni::jniGetMethodID(clazz.get(), "complete", "(Lcom/thoughtsofanintrovert/brDjinni/BrBaseViewModel;)V") };
 };
 
 }  // namespace djinni_generated

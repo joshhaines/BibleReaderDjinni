@@ -4,8 +4,6 @@
 #pragma once
 
 #include <memory>
-#include <string>
-#include <vector>
 
 namespace biblereader {
 
@@ -17,7 +15,7 @@ public:
 
     static std::shared_ptr<BrNetworkManager> create();
 
-    virtual std::vector<std::string> get_bible_books(const std::shared_ptr<BrNetworkListener> & listener) = 0;
+    virtual void get_bible_books(const std::shared_ptr<BrNetworkListener> & listener) = 0;
 };
 
 }  // namespace biblereader

@@ -10,6 +10,6 @@
 
 + (nullable BrNetworkManager *)create;
 
-- (nonnull NSArray<NSString *> *)getBibleBooks:(nullable id<BrNetworkListener>)listener;
+- (void)getBibleBooks:(nullable id<BrNetworkListener>)listener;
 
 @end

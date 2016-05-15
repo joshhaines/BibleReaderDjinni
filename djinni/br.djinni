@@ -1,1 +1,2 @@
+@import "br_base_view_model.djinni"
 @import "br_network_manager.djinni"

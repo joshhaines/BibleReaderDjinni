@@ -3,6 +3,7 @@
 
 #import "BrNetworkListener+Private.h"
 #import "BrNetworkListener.h"
+#import "BrBaseViewModel+Private.h"
 #import "DJIObjcWrapperCache+Private.h"
 
 static_assert(__has_feature(objc_arc), "Djinni requires ARC to be enabled for this file");
@@ -15,10 +16,10 @@ class BrNetworkListener::ObjcProxy final
 {
 public:
     using Handle::Handle;
-    void complete() override
+    void complete(const std::shared_ptr<::biblereader::BrBaseViewModel> & c_view_model) override
     {
         @autoreleasepool {
-            [Handle::get() complete];
+            [Handle::get() complete:(::djinni_generated::BrBaseViewModel::fromCpp(c_view_model))];
         }
     }
 };

@@ -3,13 +3,17 @@
 
 #pragma once
 
+#include <memory>
+
 namespace biblereader {
+
+class BrBaseViewModel;
 
 class BrNetworkListener {
 public:
     virtual ~BrNetworkListener() {}
 
-    virtual void complete() = 0;
+    virtual void complete(const std::shared_ptr<BrBaseViewModel> & view_model) = 0;
 };
 
 }  // namespace biblereader

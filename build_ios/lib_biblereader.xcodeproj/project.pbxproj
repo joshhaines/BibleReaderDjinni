@@ -7,16 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		425EB5D5EB52C3552600A4D3 /* BrNetworkListener+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = F6AA3C219E7DC8AE2B7E8232 /* BrNetworkListener+Private.mm */; };
-		9C24A305B586EE0E530D7DAA /* br_network_manager_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DAD2919D4E153D16E5D7650 /* br_network_manager_impl.cpp */; };
-		A3589D20E6823500D923EF76 /* BrNetworkManager+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09EE748BB35F5BFF60B9878F /* BrNetworkManager+Private.mm */; };
+		4EF17BE33DB5F509874B847A /* BrNetworkManager+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09EE748BB35F5BFF60B9878F /* BrNetworkManager+Private.mm */; };
+		5A3F97341F0E99587A270E57 /* BrBaseViewModel+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 422D0792DB732E9E9D82CF6A /* BrBaseViewModel+Private.mm */; };
+		A57A82ED61665EAC762ACB32 /* br_base_view_model_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92723144222A99CD0836C58E /* br_base_view_model_impl.cpp */; };
+		B6C4D7510083931E56DBACB6 /* br_network_manager_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DAD2919D4E153D16E5D7650 /* br_network_manager_impl.cpp */; };
+		D95AEF884E2E1552680E875E /* BrNetworkListener+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = F6AA3C219E7DC8AE2B7E8232 /* BrNetworkListener+Private.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		09EE748BB35F5BFF60B9878F /* BrNetworkManager+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "BrNetworkManager+Private.mm"; sourceTree = "<group>"; };
 		1ADBFC5FE852CBD5D7F81051 /* common.gypi */ = {isa = PBXFileReference; explicitFileType = sourcecode; name = common.gypi; path = deps/djinni/common.gypi; sourceTree = "<group>"; };
+		422D0792DB732E9E9D82CF6A /* BrBaseViewModel+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "BrBaseViewModel+Private.mm"; sourceTree = "<group>"; };
 		56BABA1EFEA7FF4754F2CBE4 /* lib_biblereader.gyp */ = {isa = PBXFileReference; explicitFileType = sourcecode; path = lib_biblereader.gyp; sourceTree = "<group>"; };
 		5DAD2919D4E153D16E5D7650 /* br_network_manager_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = br_network_manager_impl.cpp; sourceTree = "<group>"; };
+		92723144222A99CD0836C58E /* br_base_view_model_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = br_base_view_model_impl.cpp; sourceTree = "<group>"; };
 		F6AA3C219E7DC8AE2B7E8232 /* BrNetworkListener+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "BrNetworkListener+Private.mm"; sourceTree = "<group>"; };
 		F8D40BE62AED87BA9883FC7C /* lib_biblereader_objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = lib_biblereader_objc.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -32,15 +36,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1088E33552203443DDE725D7 /* generated-src/objc */ = {
-			isa = PBXGroup;
-			children = (
-				F6AA3C219E7DC8AE2B7E8232 /* BrNetworkListener+Private.mm */,
-				09EE748BB35F5BFF60B9878F /* BrNetworkManager+Private.mm */,
-			);
-			path = "generated-src/objc";
-			sourceTree = "<group>";
-		};
 		13F4059D3687C193AA4D4261 = {
 			isa = PBXGroup;
 			children = (
@@ -53,15 +48,16 @@
 		57B8F961E9FC8C03B1129997 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				1088E33552203443DDE725D7 /* generated-src/objc */,
-				83911605136DB1C55951743D /* src/cpp */,
+				926C5932E65FB1C4DDF80455 /* generated-src/objc */,
+				7F49010AD3D917F330AD0351 /* src/cpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
 		};
-		83911605136DB1C55951743D /* src/cpp */ = {
+		7F49010AD3D917F330AD0351 /* src/cpp */ = {
 			isa = PBXGroup;
 			children = (
+				92723144222A99CD0836C58E /* br_base_view_model_impl.cpp */,
 				5DAD2919D4E153D16E5D7650 /* br_network_manager_impl.cpp */,
 			);
 			path = src/cpp;
@@ -74,6 +70,16 @@
 				56BABA1EFEA7FF4754F2CBE4 /* lib_biblereader.gyp */,
 			);
 			name = Build;
+			sourceTree = "<group>";
+		};
+		926C5932E65FB1C4DDF80455 /* generated-src/objc */ = {
+			isa = PBXGroup;
+			children = (
+				422D0792DB732E9E9D82CF6A /* BrBaseViewModel+Private.mm */,
+				F6AA3C219E7DC8AE2B7E8232 /* BrNetworkListener+Private.mm */,
+				09EE748BB35F5BFF60B9878F /* BrNetworkManager+Private.mm */,
+			);
+			path = "generated-src/objc";
 			sourceTree = "<group>";
 		};
 		B48D09B801075C4CCB4324B7 /* Products */ = {
@@ -128,9 +134,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				425EB5D5EB52C3552600A4D3 /* BrNetworkListener+Private.mm in Sources */,
-				A3589D20E6823500D923EF76 /* BrNetworkManager+Private.mm in Sources */,
-				9C24A305B586EE0E530D7DAA /* br_network_manager_impl.cpp in Sources */,
+				5A3F97341F0E99587A270E57 /* BrBaseViewModel+Private.mm in Sources */,
+				D95AEF884E2E1552680E875E /* BrNetworkListener+Private.mm in Sources */,
+				4EF17BE33DB5F509874B847A /* BrNetworkManager+Private.mm in Sources */,
+				A57A82ED61665EAC762ACB32 /* br_base_view_model_impl.cpp in Sources */,
+				B6C4D7510083931E56DBACB6 /* br_network_manager_impl.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

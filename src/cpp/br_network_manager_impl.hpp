@@ -17,7 +17,7 @@ namespace biblereader {
     class BrNetworkManagerImpl : public BrNetworkManager {
         
     public:
-        std::vector<std::string> get_bible_books(const std::shared_ptr<BrNetworkListener> & listener);
+        void get_bible_books(const std::shared_ptr<BrNetworkListener> & listener);
         
     };
 }

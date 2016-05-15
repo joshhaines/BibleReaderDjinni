@@ -1,0 +1,3 @@
+br_base_view_model = interface +c {
+  static create(): br_base_view_model;
+}

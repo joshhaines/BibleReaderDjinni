@@ -4,5 +4,5 @@
 package com.thoughtsofanintrovert.brDjinni;
 
 public abstract class BrNetworkListener {
-    public abstract void complete();
+    public abstract void complete(BrBaseViewModel viewModel);
 }

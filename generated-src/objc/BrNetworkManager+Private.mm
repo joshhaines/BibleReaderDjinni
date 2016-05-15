@@ -7,7 +7,6 @@
 #import "BrNetworkManager+Private.h"
 #import "DJICppWrapperCache+Private.h"
 #import "DJIError.h"
-#import "DJIMarshal+Private.h"
 #include <exception>
 #include <utility>
 
@@ -38,10 +37,9 @@ static_assert(__has_feature(objc_arc), "Djinni requires ARC to be enabled for th
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 
-- (nonnull NSArray<NSString *> *)getBibleBooks:(nullable id<BrNetworkListener>)listener {
+- (void)getBibleBooks:(nullable id<BrNetworkListener>)listener {
     try {
-        auto r = _cppRefHandle.get()->get_bible_books(::djinni_generated::BrNetworkListener::toCpp(listener));
-        return ::djinni::List<::djinni::String>::fromCpp(r);
+        _cppRefHandle.get()->get_bible_books(::djinni_generated::BrNetworkListener::toCpp(listener));
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 

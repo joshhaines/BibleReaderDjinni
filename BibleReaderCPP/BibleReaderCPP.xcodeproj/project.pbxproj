@@ -12,6 +12,7 @@
 		84288E791CE679C0005317B3 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84288E781CE679C0005317B3 /* libcurl.dylib */; };
 		84288E7B1CE68175005317B3 /* libboost_system.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84288E7A1CE68175005317B3 /* libboost_system.dylib */; };
 		84288E7D1CE6841D005317B3 /* libboost_thread-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84288E7C1CE6841D005317B3 /* libboost_thread-mt.dylib */; };
+		84288E831CE8F4A3005317B3 /* br_base_view_model_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84288E811CE8F4A3005317B3 /* br_base_view_model_impl.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,6 +37,9 @@
 		84288E7A1CE68175005317B3 /* libboost_system.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_system.dylib; path = ../../../../../usr/local/Cellar/boost/1.60.0_2/lib/libboost_system.dylib; sourceTree = "<group>"; };
 		84288E7C1CE6841D005317B3 /* libboost_thread-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_thread-mt.dylib"; path = "../../../../../usr/local/Cellar/boost/1.60.0_2/lib/libboost_thread-mt.dylib"; sourceTree = "<group>"; };
 		84288E7E1CE81738005317B3 /* br_network_listener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = br_network_listener.hpp; sourceTree = "<group>"; };
+		84288E7F1CE8F483005317B3 /* br_base_view_model.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = br_base_view_model.hpp; sourceTree = "<group>"; };
+		84288E811CE8F4A3005317B3 /* br_base_view_model_impl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = br_base_view_model_impl.cpp; sourceTree = "<group>"; };
+		84288E821CE8F4A3005317B3 /* br_base_view_model_impl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = br_base_view_model_impl.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,7 @@
 		84288E701CE67319005317B3 /* generated-src */ = {
 			isa = PBXGroup;
 			children = (
+				84288E7F1CE8F483005317B3 /* br_base_view_model.hpp */,
 				84288E7E1CE81738005317B3 /* br_network_listener.hpp */,
 				84288E711CE6732E005317B3 /* br_network_manager.hpp */,
 			);
@@ -94,6 +99,7 @@
 		84288E721CE67333005317B3 /* impl */ = {
 			isa = PBXGroup;
 			children = (
+				84288E801CE8F48A005317B3 /* ViewModels */,
 				84288E771CE673B5005317B3 /* BrNetworkManager */,
 			);
 			name = impl;
@@ -107,6 +113,15 @@
 				84288E751CE673AA005317B3 /* br_network_manager_impl.hpp */,
 			);
 			name = BrNetworkManager;
+			sourceTree = "<group>";
+		};
+		84288E801CE8F48A005317B3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				84288E811CE8F4A3005317B3 /* br_base_view_model_impl.cpp */,
+				84288E821CE8F4A3005317B3 /* br_base_view_model_impl.hpp */,
+			);
+			name = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84288E761CE673AA005317B3 /* br_network_manager_impl.cpp in Sources */,
+				84288E831CE8F4A3005317B3 /* br_base_view_model_impl.cpp in Sources */,
 				84288E6A1CE672FB005317B3 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
