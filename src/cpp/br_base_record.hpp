@@ -13,7 +13,7 @@
 #include "br_base_record_base.hpp"
 
 namespace biblereader {
-    class BrBaseRecord : public BrBaseRecordBase {
+    struct BrBaseRecord : public BrBaseRecordBase {
     public:
         using BrBaseRecordBase::BrBaseRecordBase;
         
