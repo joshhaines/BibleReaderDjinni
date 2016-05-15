@@ -10,7 +10,7 @@
 #include <curl/curl.h>
 #include <iostream>
 #include <future>
-#include "br_base_view_model_impl.cpp"
+#include "br_base_view_model_impl.hpp"
 
 std::shared_ptr<biblereader::BrNetworkManager> biblereader::BrNetworkManager::create() {
     return std::make_shared<biblereader::BrNetworkManagerImpl>();
@@ -29,7 +29,9 @@ void biblereader::BrNetworkManagerImpl::get_bible_books(const std::shared_ptr<bi
     
     std::cout << "Starting fetch for bible books" << std::endl;
     
-    std::shared_ptr<biblereader::BrBaseViewModel> vm = biblereader::BrBaseViewModelImpl::create();
+    std::shared_ptr<biblereader::BrBaseViewModelImpl> vm(
+                                                         new biblereader::BrBaseViewModelImpl()
+                                                         );
     
     auto handle = std::async(std::launch::async, [&listener, &data, vm](){
         std::unique_ptr<CURL, void(*)(CURL*)> curl(
@@ -50,8 +52,10 @@ void biblereader::BrNetworkManagerImpl::get_bible_books(const std::shared_ptr<bi
         
         std::cout << data << std::endl;
         
+        vm->set_xml(data);
+        
         if (listener) {
-            listener->complete(vm);
+            listener->complete(NULL);
         }
     });
     

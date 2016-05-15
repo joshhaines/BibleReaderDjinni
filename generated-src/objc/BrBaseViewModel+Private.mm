@@ -6,6 +6,7 @@
 #import "BrBaseViewModel+Private.h"
 #import "DJICppWrapperCache+Private.h"
 #import "DJIError.h"
+#import "DJIMarshal+Private.h"
 #include <exception>
 #include <utility>
 
@@ -33,6 +34,12 @@ static_assert(__has_feature(objc_arc), "Djinni requires ARC to be enabled for th
     try {
         auto r = ::biblereader::BrBaseViewModel::create();
         return ::djinni_generated::BrBaseViewModel::fromCpp(r);
+    } DJINNI_TRANSLATE_EXCEPTIONS()
+}
+
+- (void)setXml:(nonnull NSString *)xml {
+    try {
+        _cppRefHandle.get()->set_xml(::djinni::String::toCpp(xml));
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 

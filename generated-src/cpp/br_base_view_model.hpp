@@ -4,6 +4,7 @@
 #pragma once
 
 #include <memory>
+#include <string>
 
 namespace biblereader {
 
@@ -12,6 +13,8 @@ public:
     virtual ~BrBaseViewModel() {}
 
     static std::shared_ptr<BrBaseViewModel> create();
+
+    virtual void set_xml(const std::string & xml) = 0;
 };
 
 }  // namespace biblereader

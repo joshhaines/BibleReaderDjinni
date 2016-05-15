@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4EF17BE33DB5F509874B847A /* BrNetworkManager+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09EE748BB35F5BFF60B9878F /* BrNetworkManager+Private.mm */; };
-		5A3F97341F0E99587A270E57 /* BrBaseViewModel+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 422D0792DB732E9E9D82CF6A /* BrBaseViewModel+Private.mm */; };
-		A57A82ED61665EAC762ACB32 /* br_base_view_model_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92723144222A99CD0836C58E /* br_base_view_model_impl.cpp */; };
-		B6C4D7510083931E56DBACB6 /* br_network_manager_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DAD2919D4E153D16E5D7650 /* br_network_manager_impl.cpp */; };
-		D95AEF884E2E1552680E875E /* BrNetworkListener+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = F6AA3C219E7DC8AE2B7E8232 /* BrNetworkListener+Private.mm */; };
+		0559C6E98A4A5086D538768E /* br_base_record.cpp in Sources */ = {isa = PBXBuildFile; fileRef = D032729245E892F415D81E16 /* br_base_record.cpp */; };
+		0638BC1385B084FA5A8462E8 /* BrNetworkListener+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = F6AA3C219E7DC8AE2B7E8232 /* BrNetworkListener+Private.mm */; };
+		3FA92E95568125B36FAB18DA /* BrNetworkManager+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 09EE748BB35F5BFF60B9878F /* BrNetworkManager+Private.mm */; };
+		4F935C2B7952648818A2F422 /* br_base_view_model_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92723144222A99CD0836C58E /* br_base_view_model_impl.cpp */; };
+		5EEB9E60939264B7F80112A8 /* BrBaseRecord+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = ED550547C41B0052E396B80D /* BrBaseRecord+Private.mm */; };
+		71702A1ADD053012C53AC5C8 /* BrBaseViewModel+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 422D0792DB732E9E9D82CF6A /* BrBaseViewModel+Private.mm */; };
+		991D21605A4660DB95D5C4EB /* BrBaseRecord.mm in Sources */ = {isa = PBXBuildFile; fileRef = C06BDD327207BDF264403A27 /* BrBaseRecord.mm */; };
+		E1D4DBAF7CCA1A3F1F7E6CB2 /* br_network_manager_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5DAD2919D4E153D16E5D7650 /* br_network_manager_impl.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +24,9 @@
 		56BABA1EFEA7FF4754F2CBE4 /* lib_biblereader.gyp */ = {isa = PBXFileReference; explicitFileType = sourcecode; path = lib_biblereader.gyp; sourceTree = "<group>"; };
 		5DAD2919D4E153D16E5D7650 /* br_network_manager_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = br_network_manager_impl.cpp; sourceTree = "<group>"; };
 		92723144222A99CD0836C58E /* br_base_view_model_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = br_base_view_model_impl.cpp; sourceTree = "<group>"; };
+		C06BDD327207BDF264403A27 /* BrBaseRecord.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BrBaseRecord.mm; sourceTree = "<group>"; };
+		D032729245E892F415D81E16 /* br_base_record.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = br_base_record.cpp; sourceTree = "<group>"; };
+		ED550547C41B0052E396B80D /* BrBaseRecord+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "BrBaseRecord+Private.mm"; sourceTree = "<group>"; };
 		F6AA3C219E7DC8AE2B7E8232 /* BrNetworkListener+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "BrNetworkListener+Private.mm"; sourceTree = "<group>"; };
 		F8D40BE62AED87BA9883FC7C /* lib_biblereader_objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = lib_biblereader_objc.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +42,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0162BD1EB3D1B750DF72553C /* src/cpp */ = {
+			isa = PBXGroup;
+			children = (
+				D032729245E892F415D81E16 /* br_base_record.cpp */,
+				92723144222A99CD0836C58E /* br_base_view_model_impl.cpp */,
+				5DAD2919D4E153D16E5D7650 /* br_network_manager_impl.cpp */,
+			);
+			path = src/cpp;
+			sourceTree = "<group>";
+		};
 		13F4059D3687C193AA4D4261 = {
 			isa = PBXGroup;
 			children = (
@@ -45,22 +61,25 @@
 			);
 			sourceTree = "<group>";
 		};
+		4E34E25F83B5DE513221C8A7 /* generated-src/objc */ = {
+			isa = PBXGroup;
+			children = (
+				ED550547C41B0052E396B80D /* BrBaseRecord+Private.mm */,
+				C06BDD327207BDF264403A27 /* BrBaseRecord.mm */,
+				422D0792DB732E9E9D82CF6A /* BrBaseViewModel+Private.mm */,
+				F6AA3C219E7DC8AE2B7E8232 /* BrNetworkListener+Private.mm */,
+				09EE748BB35F5BFF60B9878F /* BrNetworkManager+Private.mm */,
+			);
+			path = "generated-src/objc";
+			sourceTree = "<group>";
+		};
 		57B8F961E9FC8C03B1129997 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				926C5932E65FB1C4DDF80455 /* generated-src/objc */,
-				7F49010AD3D917F330AD0351 /* src/cpp */,
+				4E34E25F83B5DE513221C8A7 /* generated-src/objc */,
+				0162BD1EB3D1B750DF72553C /* src/cpp */,
 			);
 			name = Source;
-			sourceTree = "<group>";
-		};
-		7F49010AD3D917F330AD0351 /* src/cpp */ = {
-			isa = PBXGroup;
-			children = (
-				92723144222A99CD0836C58E /* br_base_view_model_impl.cpp */,
-				5DAD2919D4E153D16E5D7650 /* br_network_manager_impl.cpp */,
-			);
-			path = src/cpp;
 			sourceTree = "<group>";
 		};
 		83F8EA3259FE1EEE8CFFB786 /* Build */ = {
@@ -70,16 +89,6 @@
 				56BABA1EFEA7FF4754F2CBE4 /* lib_biblereader.gyp */,
 			);
 			name = Build;
-			sourceTree = "<group>";
-		};
-		926C5932E65FB1C4DDF80455 /* generated-src/objc */ = {
-			isa = PBXGroup;
-			children = (
-				422D0792DB732E9E9D82CF6A /* BrBaseViewModel+Private.mm */,
-				F6AA3C219E7DC8AE2B7E8232 /* BrNetworkListener+Private.mm */,
-				09EE748BB35F5BFF60B9878F /* BrNetworkManager+Private.mm */,
-			);
-			path = "generated-src/objc";
 			sourceTree = "<group>";
 		};
 		B48D09B801075C4CCB4324B7 /* Products */ = {
@@ -134,11 +143,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A3F97341F0E99587A270E57 /* BrBaseViewModel+Private.mm in Sources */,
-				D95AEF884E2E1552680E875E /* BrNetworkListener+Private.mm in Sources */,
-				4EF17BE33DB5F509874B847A /* BrNetworkManager+Private.mm in Sources */,
-				A57A82ED61665EAC762ACB32 /* br_base_view_model_impl.cpp in Sources */,
-				B6C4D7510083931E56DBACB6 /* br_network_manager_impl.cpp in Sources */,
+				5EEB9E60939264B7F80112A8 /* BrBaseRecord+Private.mm in Sources */,
+				991D21605A4660DB95D5C4EB /* BrBaseRecord.mm in Sources */,
+				71702A1ADD053012C53AC5C8 /* BrBaseViewModel+Private.mm in Sources */,
+				0638BC1385B084FA5A8462E8 /* BrNetworkListener+Private.mm in Sources */,
+				3FA92E95568125B36FAB18DA /* BrNetworkManager+Private.mm in Sources */,
+				0559C6E98A4A5086D538768E /* br_base_record.cpp in Sources */,
+				4F935C2B7952648818A2F422 /* br_base_view_model_impl.cpp in Sources */,
+				E1D4DBAF7CCA1A3F1F7E6CB2 /* br_network_manager_impl.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

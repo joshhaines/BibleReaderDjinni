@@ -11,11 +11,16 @@
 
 #include <stdio.h>
 #include "br_base_view_model.hpp"
+#include "br_base_record.hpp"
 
 namespace biblereader {
     class BrBaseViewModelImpl : public BrBaseViewModel {
     public:
         BrBaseViewModelImpl();
+        
+        void set_xml(const std::string & xml);
+    private:
+        std::shared_ptr<BrBaseRecord> viewModel;
     };
 }
 

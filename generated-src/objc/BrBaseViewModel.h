@@ -9,4 +9,6 @@
 
 + (nullable BrBaseViewModel *)create;
 
+- (void)setXml:(nonnull NSString *)xml;
+
 @end
