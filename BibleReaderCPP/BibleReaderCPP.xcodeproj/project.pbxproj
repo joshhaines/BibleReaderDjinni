@@ -13,7 +13,7 @@
 		84288E7B1CE68175005317B3 /* libboost_system.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84288E7A1CE68175005317B3 /* libboost_system.dylib */; };
 		84288E7D1CE6841D005317B3 /* libboost_thread-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84288E7C1CE6841D005317B3 /* libboost_thread-mt.dylib */; };
 		84288E831CE8F4A3005317B3 /* base_view_model_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84288E811CE8F4A3005317B3 /* base_view_model_impl.cpp */; };
-		84288E871CE8F6F8005317B3 /* br_base_record.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84288E851CE8F6F8005317B3 /* br_base_record.cpp */; };
+		84288E871CE8F6F8005317B3 /* base_record.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84288E851CE8F6F8005317B3 /* base_record.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,7 +42,7 @@
 		84288E7C1CE6841D005317B3 /* libboost_thread-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_thread-mt.dylib"; path = "../../../../../usr/local/Cellar/boost/1.60.0_2/lib/libboost_thread-mt.dylib"; sourceTree = "<group>"; };
 		84288E811CE8F4A3005317B3 /* base_view_model_impl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = base_view_model_impl.cpp; sourceTree = "<group>"; };
 		84288E821CE8F4A3005317B3 /* base_view_model_impl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = base_view_model_impl.hpp; sourceTree = "<group>"; };
-		84288E851CE8F6F8005317B3 /* br_base_record.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = br_base_record.cpp; sourceTree = "<group>"; };
+		84288E851CE8F6F8005317B3 /* base_record.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = base_record.cpp; sourceTree = "<group>"; };
 		84288E861CE8F6F8005317B3 /* base_record.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = base_record.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,7 +125,7 @@
 			children = (
 				84288E811CE8F4A3005317B3 /* base_view_model_impl.cpp */,
 				84288E821CE8F4A3005317B3 /* base_view_model_impl.hpp */,
-				84288E851CE8F6F8005317B3 /* br_base_record.cpp */,
+				84288E851CE8F6F8005317B3 /* base_record.cpp */,
 				84288E861CE8F6F8005317B3 /* base_record.hpp */,
 			);
 			name = ViewModels;
@@ -190,7 +190,7 @@
 				84288E761CE673AA005317B3 /* network_manager_impl.cpp in Sources */,
 				84288E831CE8F4A3005317B3 /* base_view_model_impl.cpp in Sources */,
 				84288E6A1CE672FB005317B3 /* main.cpp in Sources */,
-				84288E871CE8F6F8005317B3 /* br_base_record.cpp in Sources */,
+				84288E871CE8F6F8005317B3 /* base_record.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
