@@ -7,11 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84080FFB1CEA0C170063D134 /* libcppnetlib-uri.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84080FF71CEA08CD0063D134 /* libcppnetlib-uri.a */; };
+		84080FFC1CEA0E360063D134 /* libcppnetlib-client-connections.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84080FF51CEA08C90063D134 /* libcppnetlib-client-connections.a */; };
+		84080FFD1CEA0E3C0063D134 /* libcppnetlib-server-parsers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84080FF91CEA08F30063D134 /* libcppnetlib-server-parsers.a */; };
+		84080FFF1CEA0FDB0063D134 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84080FFE1CEA0FDB0063D134 /* libcrypto.a */; };
+		840810011CEA0FF80063D134 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 840810001CEA0FF80063D134 /* libssl.a */; };
+		840810051CEA2DDD0063D134 /* base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 840810031CEA2DDD0063D134 /* base64.cpp */; };
+		840810081CEA6DC20063D134 /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 840810071CEA6DC20063D134 /* libboost_system.a */; };
 		84288E6A1CE672FB005317B3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84288E691CE672FB005317B3 /* main.cpp */; };
 		84288E761CE673AA005317B3 /* network_manager_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84288E741CE673AA005317B3 /* network_manager_impl.cpp */; };
-		84288E791CE679C0005317B3 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84288E781CE679C0005317B3 /* libcurl.dylib */; };
-		84288E7B1CE68175005317B3 /* libboost_system.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84288E7A1CE68175005317B3 /* libboost_system.dylib */; };
-		84288E7D1CE6841D005317B3 /* libboost_thread-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84288E7C1CE6841D005317B3 /* libboost_thread-mt.dylib */; };
 		84288E831CE8F4A3005317B3 /* base_view_model_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84288E811CE8F4A3005317B3 /* base_view_model_impl.cpp */; };
 		84288E871CE8F6F8005317B3 /* base_record.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84288E851CE8F6F8005317B3 /* base_record.cpp */; };
 /* End PBXBuildFile section */
@@ -33,6 +37,14 @@
 		84080FDF1CE949150063D134 /* base_view_model.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = base_view_model.hpp; sourceTree = "<group>"; };
 		84080FE01CE949150063D134 /* network_listener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = network_listener.hpp; sourceTree = "<group>"; };
 		84080FE11CE949150063D134 /* network_manager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = network_manager.hpp; sourceTree = "<group>"; };
+		84080FF51CEA08C90063D134 /* libcppnetlib-client-connections.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcppnetlib-client-connections.a"; path = "../../../../../usr/local/Cellar/cpp-netlib/0.12.0_1/lib/libcppnetlib-client-connections.a"; sourceTree = "<group>"; };
+		84080FF71CEA08CD0063D134 /* libcppnetlib-uri.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcppnetlib-uri.a"; path = "../../../../../usr/local/Cellar/cpp-netlib/0.12.0_1/lib/libcppnetlib-uri.a"; sourceTree = "<group>"; };
+		84080FF91CEA08F30063D134 /* libcppnetlib-server-parsers.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcppnetlib-server-parsers.a"; path = "../../../../../usr/local/Cellar/cpp-netlib/0.12.0_1/lib/libcppnetlib-server-parsers.a"; sourceTree = "<group>"; };
+		84080FFE1CEA0FDB0063D134 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = ../../../../../usr/local/Cellar/openssl/1.0.2h_1/lib/libcrypto.a; sourceTree = "<group>"; };
+		840810001CEA0FF80063D134 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = ../../../../../usr/local/Cellar/openssl/1.0.2h_1/lib/libssl.a; sourceTree = "<group>"; };
+		840810031CEA2DDD0063D134 /* base64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = base64.cpp; sourceTree = "<group>"; };
+		840810041CEA2DDD0063D134 /* base64.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = base64.hpp; sourceTree = "<group>"; };
+		840810071CEA6DC20063D134 /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = ../../../../../usr/local/Cellar/boost/1.60.0_2/lib/libboost_system.a; sourceTree = "<group>"; };
 		84288E661CE672FB005317B3 /* BibleReaderCPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BibleReaderCPP; sourceTree = BUILT_PRODUCTS_DIR; };
 		84288E691CE672FB005317B3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		84288E741CE673AA005317B3 /* network_manager_impl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = network_manager_impl.cpp; sourceTree = "<group>"; };
@@ -51,18 +63,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84288E791CE679C0005317B3 /* libcurl.dylib in Frameworks */,
-				84288E7B1CE68175005317B3 /* libboost_system.dylib in Frameworks */,
-				84288E7D1CE6841D005317B3 /* libboost_thread-mt.dylib in Frameworks */,
+				84080FFB1CEA0C170063D134 /* libcppnetlib-uri.a in Frameworks */,
+				84080FFF1CEA0FDB0063D134 /* libcrypto.a in Frameworks */,
+				840810081CEA6DC20063D134 /* libboost_system.a in Frameworks */,
+				84080FFC1CEA0E360063D134 /* libcppnetlib-client-connections.a in Frameworks */,
+				840810011CEA0FF80063D134 /* libssl.a in Frameworks */,
+				84080FFD1CEA0E3C0063D134 /* libcppnetlib-server-parsers.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		840810021CEA2DCF0063D134 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				840810031CEA2DDD0063D134 /* base64.cpp */,
+				840810041CEA2DDD0063D134 /* base64.hpp */,
+			);
+			name = Base64;
+			sourceTree = "<group>";
+		};
 		84288E5D1CE672FB005317B3 = {
 			isa = PBXGroup;
 			children = (
+				840810071CEA6DC20063D134 /* libboost_system.a */,
+				840810001CEA0FF80063D134 /* libssl.a */,
+				84080FFE1CEA0FDB0063D134 /* libcrypto.a */,
+				84080FF91CEA08F30063D134 /* libcppnetlib-server-parsers.a */,
+				84080FF71CEA08CD0063D134 /* libcppnetlib-uri.a */,
+				84080FF51CEA08C90063D134 /* libcppnetlib-client-connections.a */,
 				84288E7C1CE6841D005317B3 /* libboost_thread-mt.dylib */,
 				84288E7A1CE68175005317B3 /* libboost_system.dylib */,
 				84288E781CE679C0005317B3 /* libcurl.dylib */,
@@ -104,6 +134,7 @@
 		84288E721CE67333005317B3 /* impl */ = {
 			isa = PBXGroup;
 			children = (
+				840810021CEA2DCF0063D134 /* Base64 */,
 				84288E801CE8F48A005317B3 /* ViewModels */,
 				84288E771CE673B5005317B3 /* BrNetworkManager */,
 			);
@@ -190,6 +221,7 @@
 				84288E761CE673AA005317B3 /* network_manager_impl.cpp in Sources */,
 				84288E831CE8F4A3005317B3 /* base_view_model_impl.cpp in Sources */,
 				84288E6A1CE672FB005317B3 /* main.cpp in Sources */,
+				840810051CEA2DDD0063D134 /* base64.cpp in Sources */,
 				84288E871CE8F6F8005317B3 /* base_record.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,13 +314,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
-					/usr/local/opt/curl/include,
 					/usr/local/Cellar/boost/1.60.0_2/include,
+					"/usr/local/Cellar/cpp-netlib/0.12.0_1/include",
+					/usr/local/Cellar/asio/1.10.6/include,
+					/usr/local/opt/openssl/include,
 				);
 				LIBRARY_SEARCH_PATHS = (
-					/usr/local/opt/curl/lib,
-					/usr/local/Cellar/curl/7.48.0/lib,
 					/usr/local/Cellar/boost/1.60.0_2/lib,
+					/usr/local/opt/openssl/lib,
+					"/usr/local/Cellar/cpp-netlib/0.12.0_1/lib",
+					/usr/local/Cellar/openssl/1.0.2h_1/lib,
 				);
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -299,13 +334,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				HEADER_SEARCH_PATHS = (
-					/usr/local/opt/curl/include,
 					/usr/local/Cellar/boost/1.60.0_2/include,
+					"/usr/local/Cellar/cpp-netlib/0.12.0_1/include",
+					/usr/local/Cellar/asio/1.10.6/include,
+					/usr/local/opt/openssl/include,
 				);
 				LIBRARY_SEARCH_PATHS = (
-					/usr/local/opt/curl/lib,
-					/usr/local/Cellar/curl/7.48.0/lib,
 					/usr/local/Cellar/boost/1.60.0_2/lib,
+					/usr/local/opt/openssl/lib,
+					"/usr/local/Cellar/cpp-netlib/0.12.0_1/lib",
+					/usr/local/Cellar/openssl/1.0.2h_1/lib,
 				);
 				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
