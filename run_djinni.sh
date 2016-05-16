@@ -7,6 +7,7 @@ objc_out="$base_dir/generated-src/objc"
 java_out="$base_dir/generated-src/java/com/thoughtsofanintrovert/brDjinni"
 java_package="com.thoughtsofanintrovert.brDjinni"
 namespace="biblereader"
+objc_prefix="BR"
 djinni_file="djinni/br.djinni"
 
 ./deps/djinni/src/run \
@@ -25,6 +26,7 @@ djinni_file="djinni/br.djinni"
    --ident-jni-file NativeFooBar \
    \
    --objc-out $objc_out \
+   --objc-type-prefix $objc_prefix \
    \
    --objcpp-out $objc_out \
    \

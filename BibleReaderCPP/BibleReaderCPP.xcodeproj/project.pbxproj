@@ -8,11 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		84288E6A1CE672FB005317B3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84288E691CE672FB005317B3 /* main.cpp */; };
-		84288E761CE673AA005317B3 /* br_network_manager_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84288E741CE673AA005317B3 /* br_network_manager_impl.cpp */; };
+		84288E761CE673AA005317B3 /* network_manager_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84288E741CE673AA005317B3 /* network_manager_impl.cpp */; };
 		84288E791CE679C0005317B3 /* libcurl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84288E781CE679C0005317B3 /* libcurl.dylib */; };
 		84288E7B1CE68175005317B3 /* libboost_system.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84288E7A1CE68175005317B3 /* libboost_system.dylib */; };
 		84288E7D1CE6841D005317B3 /* libboost_thread-mt.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 84288E7C1CE6841D005317B3 /* libboost_thread-mt.dylib */; };
-		84288E831CE8F4A3005317B3 /* br_base_view_model_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84288E811CE8F4A3005317B3 /* br_base_view_model_impl.cpp */; };
+		84288E831CE8F4A3005317B3 /* base_view_model_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84288E811CE8F4A3005317B3 /* base_view_model_impl.cpp */; };
 		84288E871CE8F6F8005317B3 /* br_base_record.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84288E851CE8F6F8005317B3 /* br_base_record.cpp */; };
 /* End PBXBuildFile section */
 
@@ -29,21 +29,21 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		84080FDE1CE949150063D134 /* base_record_base.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = base_record_base.hpp; sourceTree = "<group>"; };
+		84080FDF1CE949150063D134 /* base_view_model.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = base_view_model.hpp; sourceTree = "<group>"; };
+		84080FE01CE949150063D134 /* network_listener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = network_listener.hpp; sourceTree = "<group>"; };
+		84080FE11CE949150063D134 /* network_manager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = network_manager.hpp; sourceTree = "<group>"; };
 		84288E661CE672FB005317B3 /* BibleReaderCPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BibleReaderCPP; sourceTree = BUILT_PRODUCTS_DIR; };
 		84288E691CE672FB005317B3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		84288E711CE6732E005317B3 /* br_network_manager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = br_network_manager.hpp; sourceTree = "<group>"; };
-		84288E741CE673AA005317B3 /* br_network_manager_impl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = br_network_manager_impl.cpp; sourceTree = "<group>"; };
-		84288E751CE673AA005317B3 /* br_network_manager_impl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = br_network_manager_impl.hpp; sourceTree = "<group>"; };
+		84288E741CE673AA005317B3 /* network_manager_impl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = network_manager_impl.cpp; sourceTree = "<group>"; };
+		84288E751CE673AA005317B3 /* network_manager_impl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = network_manager_impl.hpp; sourceTree = "<group>"; };
 		84288E781CE679C0005317B3 /* libcurl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcurl.dylib; path = ../../../../../usr/local/Cellar/curl/7.48.0/lib/libcurl.dylib; sourceTree = "<group>"; };
 		84288E7A1CE68175005317B3 /* libboost_system.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libboost_system.dylib; path = ../../../../../usr/local/Cellar/boost/1.60.0_2/lib/libboost_system.dylib; sourceTree = "<group>"; };
 		84288E7C1CE6841D005317B3 /* libboost_thread-mt.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libboost_thread-mt.dylib"; path = "../../../../../usr/local/Cellar/boost/1.60.0_2/lib/libboost_thread-mt.dylib"; sourceTree = "<group>"; };
-		84288E7E1CE81738005317B3 /* br_network_listener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = br_network_listener.hpp; sourceTree = "<group>"; };
-		84288E7F1CE8F483005317B3 /* br_base_view_model.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = br_base_view_model.hpp; sourceTree = "<group>"; };
-		84288E811CE8F4A3005317B3 /* br_base_view_model_impl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = br_base_view_model_impl.cpp; sourceTree = "<group>"; };
-		84288E821CE8F4A3005317B3 /* br_base_view_model_impl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = br_base_view_model_impl.hpp; sourceTree = "<group>"; };
-		84288E841CE8F6DC005317B3 /* br_base_record_base.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = br_base_record_base.hpp; sourceTree = "<group>"; };
+		84288E811CE8F4A3005317B3 /* base_view_model_impl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = base_view_model_impl.cpp; sourceTree = "<group>"; };
+		84288E821CE8F4A3005317B3 /* base_view_model_impl.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = base_view_model_impl.hpp; sourceTree = "<group>"; };
 		84288E851CE8F6F8005317B3 /* br_base_record.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = br_base_record.cpp; sourceTree = "<group>"; };
-		84288E861CE8F6F8005317B3 /* br_base_record.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = br_base_record.hpp; sourceTree = "<group>"; };
+		84288E861CE8F6F8005317B3 /* base_record.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = base_record.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,10 +92,10 @@
 		84288E701CE67319005317B3 /* generated-src */ = {
 			isa = PBXGroup;
 			children = (
-				84288E841CE8F6DC005317B3 /* br_base_record_base.hpp */,
-				84288E7F1CE8F483005317B3 /* br_base_view_model.hpp */,
-				84288E7E1CE81738005317B3 /* br_network_listener.hpp */,
-				84288E711CE6732E005317B3 /* br_network_manager.hpp */,
+				84080FDE1CE949150063D134 /* base_record_base.hpp */,
+				84080FDF1CE949150063D134 /* base_view_model.hpp */,
+				84080FE01CE949150063D134 /* network_listener.hpp */,
+				84080FE11CE949150063D134 /* network_manager.hpp */,
 			);
 			name = "generated-src";
 			path = "../../generated-src/cpp";
@@ -114,8 +114,8 @@
 		84288E771CE673B5005317B3 /* BrNetworkManager */ = {
 			isa = PBXGroup;
 			children = (
-				84288E741CE673AA005317B3 /* br_network_manager_impl.cpp */,
-				84288E751CE673AA005317B3 /* br_network_manager_impl.hpp */,
+				84288E741CE673AA005317B3 /* network_manager_impl.cpp */,
+				84288E751CE673AA005317B3 /* network_manager_impl.hpp */,
 			);
 			name = BrNetworkManager;
 			sourceTree = "<group>";
@@ -123,10 +123,10 @@
 		84288E801CE8F48A005317B3 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				84288E811CE8F4A3005317B3 /* br_base_view_model_impl.cpp */,
-				84288E821CE8F4A3005317B3 /* br_base_view_model_impl.hpp */,
+				84288E811CE8F4A3005317B3 /* base_view_model_impl.cpp */,
+				84288E821CE8F4A3005317B3 /* base_view_model_impl.hpp */,
 				84288E851CE8F6F8005317B3 /* br_base_record.cpp */,
-				84288E861CE8F6F8005317B3 /* br_base_record.hpp */,
+				84288E861CE8F6F8005317B3 /* base_record.hpp */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -187,8 +187,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84288E761CE673AA005317B3 /* br_network_manager_impl.cpp in Sources */,
-				84288E831CE8F4A3005317B3 /* br_base_view_model_impl.cpp in Sources */,
+				84288E761CE673AA005317B3 /* network_manager_impl.cpp in Sources */,
+				84288E831CE8F4A3005317B3 /* base_view_model_impl.cpp in Sources */,
 				84288E6A1CE672FB005317B3 /* main.cpp in Sources */,
 				84288E871CE8F6F8005317B3 /* br_base_record.cpp in Sources */,
 			);
@@ -331,6 +331,7 @@
 				84288E6F1CE672FB005317B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

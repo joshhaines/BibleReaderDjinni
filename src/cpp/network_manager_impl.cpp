@@ -1,22 +1,24 @@
 //
-//  br_network_manager_impl.cpp
+//  network_manager_impl.cpp
 //  BibleReaderCPP
 //
 //  Created by Joshua Haines on 5/13/16.
 //  Copyright © 2016 Joshua Haines. All rights reserved.
 //
 
-#include "br_network_manager_impl.hpp"
+#include "network_manager_impl.hpp"
 #include <curl/curl.h>
 #include <iostream>
 #include <future>
-#include "br_base_view_model_impl.hpp"
+#include "base_view_model_impl.hpp"
 
-std::shared_ptr<biblereader::BrNetworkManager> biblereader::BrNetworkManager::create() {
-    return std::make_shared<biblereader::BrNetworkManagerImpl>();
+using namespace biblereader;
+
+std::shared_ptr<NetworkManager> NetworkManager::create() {
+    return std::make_shared<NetworkManagerImpl>();
 }
 
-biblereader::BrNetworkManagerImpl::BrNetworkManagerImpl() {
+NetworkManagerImpl::NetworkManagerImpl() {
     
 }
 
@@ -27,14 +29,14 @@ size_t writeCallback(char* buf, size_t size, size_t nmemb, void *up) {
     return size*nmemb;
 }
 
-void biblereader::BrNetworkManagerImpl::get_bible_books(const std::shared_ptr<biblereader::BrNetworkListener> &listener) {
+void NetworkManagerImpl::get_bible_books(const std::shared_ptr<NetworkListener> &listener) {
     
     std::string data;
     
     std::cout << "Starting fetch for bible books" << std::endl;
     
-    std::shared_ptr<biblereader::BrBaseViewModelImpl> vm(
-                                                         new biblereader::BrBaseViewModelImpl()
+    std::shared_ptr<BaseViewModelImpl> vm(
+                                                         new BaseViewModelImpl()
                                                          );
     
     auto handle = std::async(std::launch::async, [&listener, &data, vm](){

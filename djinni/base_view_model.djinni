@@ -1,0 +1,9 @@
+base_record = record +c {
+  xml: string;
+}
+
+base_view_model = interface +c {
+  static create(): base_view_model;
+
+  set_xml(xml: string);
+}

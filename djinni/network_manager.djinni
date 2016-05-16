@@ -1,0 +1,9 @@
+network_manager = interface +c {
+  static create(): network_manager;
+
+  get_bible_books(listener: network_listener);
+}
+
+network_listener = interface +o +j {
+  complete(view_model: base_view_model);
+}

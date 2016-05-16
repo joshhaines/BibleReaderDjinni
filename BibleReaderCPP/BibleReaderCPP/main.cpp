@@ -7,7 +7,7 @@
 //
 
 #include <iostream>
-#include "br_network_manager_impl.hpp"
+#include "network_manager_impl.hpp"
 #include <boost/asio.hpp>
 #include <boost/thread.hpp>
 #include <boost/bind.hpp>
@@ -17,11 +17,11 @@ using namespace biblereader;
 int main(int argc, const char * argv[]) {
     // insert code here...
     
-    boost::shared_ptr<BrNetworkManagerImpl> networkManager(
-        new BrNetworkManagerImpl
+    boost::shared_ptr<NetworkManagerImpl> networkManager(
+        new NetworkManagerImpl
     );
     
-    std::shared_ptr<BrNetworkListener> listener;
+    std::shared_ptr<NetworkListener> listener;
     
     networkManager->get_bible_books(NULL);
     
