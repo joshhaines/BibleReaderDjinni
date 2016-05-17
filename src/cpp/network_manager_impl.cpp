@@ -9,7 +9,7 @@
 #define BOOST_NETWORK_ENABLE_HTTPS
 
 #include "network_manager_impl.hpp"
-#include <curl/curl.h>
+//#include <curl/curl.h>
 #include <iostream>
 #include <future>
 #include "base_view_model_impl.hpp"
