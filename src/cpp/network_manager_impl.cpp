@@ -29,24 +29,24 @@ NetworkManagerImpl::NetworkManagerImpl() {
     
 }
 
-size_t writeCallback(char* buf, size_t size, size_t nmemb, void *up) {
-    for (int c = 0; c < size*nmemb; c++) {
-        ((std::string*)up)->push_back(buf[c]);
-    }
-    return size*nmemb;
-}
-
-BOOST_NETWORK_HTTP_BODY_CALLBACK(print_body, range, error) {
-    if (!error) {
-        std::cout << "callback" << std::endl;
-    } else {
-        std::cout << "error" << std::endl;
-    }
-}
-
-void blabla(boost::iterator_range<char const *> const & a, std::error_code const & b) {
-    std::cout << "hahaha" << std::endl;
-}
+//size_t writeCallback(char* buf, size_t size, size_t nmemb, void *up) {
+//    for (int c = 0; c < size*nmemb; c++) {
+//        ((std::string*)up)->push_back(buf[c]);
+//    }
+//    return size*nmemb;
+//}
+//
+//BOOST_NETWORK_HTTP_BODY_CALLBACK(print_body, range, error) {
+//    if (!error) {
+//        std::cout << "callback" << std::endl;
+//    } else {
+//        std::cout << "error" << std::endl;
+//    }
+//}
+//
+//void blabla(boost::iterator_range<char const *> const & a, std::error_code const & b) {
+//    std::cout << "hahaha" << std::endl;
+//}
 
 void NetworkManagerImpl::get_bible_books(const std::shared_ptr<NetworkListener> &listener) {
     
