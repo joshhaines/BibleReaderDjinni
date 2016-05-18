@@ -15,6 +15,8 @@ public:
     static std::shared_ptr<BaseViewModel> create();
 
     virtual void set_xml(const std::string & xml) = 0;
+
+    virtual std::string get_xml() = 0;
 };
 
 }  // namespace biblereader

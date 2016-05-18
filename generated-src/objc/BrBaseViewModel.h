@@ -11,4 +11,6 @@
 
 - (void)setXml:(nonnull NSString *)xml;
 
+- (nonnull NSString *)getXml;
+
 @end

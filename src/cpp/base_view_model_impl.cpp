@@ -21,3 +21,7 @@ BaseViewModelImpl::BaseViewModelImpl() {
 void BaseViewModelImpl::set_xml(const std::string & xml) {
     viewModel->xml = xml;
 }
+
+std::string BaseViewModelImpl::get_xml() {
+    return viewModel->xml;
+}

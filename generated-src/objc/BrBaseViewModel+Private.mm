@@ -43,6 +43,13 @@ static_assert(__has_feature(objc_arc), "Djinni requires ARC to be enabled for th
     } DJINNI_TRANSLATE_EXCEPTIONS()
 }
 
+- (nonnull NSString *)getXml {
+    try {
+        auto r = _cppRefHandle.get()->get_xml();
+        return ::djinni::String::fromCpp(r);
+    } DJINNI_TRANSLATE_EXCEPTIONS()
+}
+
 namespace djinni_generated {
 
 auto BaseViewModel::toCpp(ObjcType objc) -> CppType

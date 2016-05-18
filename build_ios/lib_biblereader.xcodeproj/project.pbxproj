@@ -7,42 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03C5E1F6F6BEF0C199F1ECEC /* libboost_system.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6688DB870E18BC06FEF5AA09 /* libboost_system.a */; };
+		00C5D33E6C7A72695A3B95F2 /* base_record.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA2EC01C62AA6D028FE1EF59 /* base_record.cpp */; };
+		0339AEB243294453AC848BFD /* libiconv.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DB6406E45F56F7200DF31BC /* libiconv.dylib */; };
 		045B0133C3310009D2159DAD /* BRNetworkListener+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 361A6AA1D6CBF8976A5905C1 /* BRNetworkListener+Private.mm */; };
-		2248B3500E6B6E435CEC7F56 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE227BF388109D7112A65FB /* libcrypto.a */; };
-		2E389D9B95D7B132E25C82DD /* libcppnetlib-client-connections.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B2753457F48DBE049D701FD /* libcppnetlib-client-connections.a */; };
+		26B06EF47A811057117C9425 /* libcpprest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCFAD86154FFE8B828EA701E /* libcpprest.a */; };
 		321073A85A4B4006BC5AD926 /* BRBaseRecord+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = AA2B6BEC3F23CB13C6C1FCC3 /* BRBaseRecord+Private.mm */; };
-		3EA3A2DEF9EDFC47223FFA6E /* network_manager_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4ECA39B7D80AFF5891CC80B4 /* network_manager_impl.cpp */; };
 		41A6FAC65AD69EAD192D9901 /* BRBaseViewModel+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1DC54AFA60807E8AAFC64CB6 /* BRBaseViewModel+Private.mm */; };
-		6E2451D4EAD4C492200EEAF4 /* libcppnetlib-uri.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5AFB6BFE555AFC4126E3E99A /* libcppnetlib-uri.a */; };
 		840240EFA9A6C25CF6B06A89 /* BRBaseRecord.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2807C23B579E78B2AE5216C4 /* BRBaseRecord.mm */; };
-		9845F6D0D863C1CB84FCD140 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F3E7189C6A824DA4E5C788ED /* libssl.a */; };
-		9F17615A756397E97628A74F /* base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D0C87DD76CE3F4F2EDAE0E3 /* base64.cpp */; };
-		9FADE94AEE72627CE67EACF4 /* base_record.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EA2EC01C62AA6D028FE1EF59 /* base_record.cpp */; };
+		8D780538438B2FE8C7A94525 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AF0F8EC34A8079622598D65 /* libcrypto.a */; };
+		90E24DDD385596DCCC4F1706 /* base_view_model_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E47DABA8183E9C86CE7700AF /* base_view_model_impl.cpp */; };
 		A4C602F640476CE4E02EF141 /* BRNetworkManager+Private.mm in Sources */ = {isa = PBXBuildFile; fileRef = 30DA0EADA570E6F49AADFAD6 /* BRNetworkManager+Private.mm */; };
-		D33ABEB5D1A926A2ACD084DF /* libcppnetlib-server-parsers.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B68E32C257A64F8075E46D1 /* libcppnetlib-server-parsers.a */; };
-		EE31165AC86703C89551788D /* base_view_model_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E47DABA8183E9C86CE7700AF /* base_view_model_impl.cpp */; };
+		A93572ECE8D0C4003A09162A /* network_manager_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4ECA39B7D80AFF5891CC80B4 /* network_manager_impl.cpp */; };
+		FD18E0016DD8C0C5A86E5410 /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B09916F6A44BA414C7E7B9C1 /* libssl.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0DB6406E45F56F7200DF31BC /* libiconv.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libiconv.dylib; path = /usr/local/Cellar/libiconv/1.14/lib/libiconv.dylib; sourceTree = "<group>"; };
 		1ADBFC5FE852CBD5D7F81051 /* common.gypi */ = {isa = PBXFileReference; explicitFileType = sourcecode; name = common.gypi; path = deps/djinni/common.gypi; sourceTree = "<group>"; };
 		1DC54AFA60807E8AAFC64CB6 /* BRBaseViewModel+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "BRBaseViewModel+Private.mm"; sourceTree = "<group>"; };
 		2807C23B579E78B2AE5216C4 /* BRBaseRecord.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = BRBaseRecord.mm; sourceTree = "<group>"; };
 		30DA0EADA570E6F49AADFAD6 /* BRNetworkManager+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "BRNetworkManager+Private.mm"; sourceTree = "<group>"; };
 		361A6AA1D6CBF8976A5905C1 /* BRNetworkListener+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "BRNetworkListener+Private.mm"; sourceTree = "<group>"; };
-		4B2753457F48DBE049D701FD /* libcppnetlib-client-connections.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcppnetlib-client-connections.a"; path = "/usr/local/Cellar/cpp-netlib/0.12.0_1/lib/libcppnetlib-client-connections.a"; sourceTree = "<group>"; };
+		4AF0F8EC34A8079622598D65 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = /Users/admin/Documents/casablanca/Build_iOS/openssl/lib/libcrypto.a; sourceTree = "<group>"; };
 		4ECA39B7D80AFF5891CC80B4 /* network_manager_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = network_manager_impl.cpp; sourceTree = "<group>"; };
 		56BABA1EFEA7FF4754F2CBE4 /* lib_biblereader.gyp */ = {isa = PBXFileReference; explicitFileType = sourcecode; path = lib_biblereader.gyp; sourceTree = "<group>"; };
-		5AFB6BFE555AFC4126E3E99A /* libcppnetlib-uri.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcppnetlib-uri.a"; path = "/usr/local/Cellar/cpp-netlib/0.12.0_1/lib/libcppnetlib-uri.a"; sourceTree = "<group>"; };
-		5D0C87DD76CE3F4F2EDAE0E3 /* base64.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = base64.cpp; sourceTree = "<group>"; };
-		6688DB870E18BC06FEF5AA09 /* libboost_system.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libboost_system.a; path = /usr/local/Cellar/boost/1.60.0_2/lib/libboost_system.a; sourceTree = "<group>"; };
-		8B68E32C257A64F8075E46D1 /* libcppnetlib-server-parsers.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libcppnetlib-server-parsers.a"; path = "/usr/local/Cellar/cpp-netlib/0.12.0_1/lib/libcppnetlib-server-parsers.a"; sourceTree = "<group>"; };
 		AA2B6BEC3F23CB13C6C1FCC3 /* BRBaseRecord+Private.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "BRBaseRecord+Private.mm"; sourceTree = "<group>"; };
-		AEE227BF388109D7112A65FB /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = /usr/local/Cellar/openssl/1.0.2h_1/lib/libcrypto.a; sourceTree = "<group>"; };
+		B09916F6A44BA414C7E7B9C1 /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = /Users/admin/Documents/casablanca/Build_iOS/openssl/lib/libssl.a; sourceTree = "<group>"; };
 		E47DABA8183E9C86CE7700AF /* base_view_model_impl.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = base_view_model_impl.cpp; sourceTree = "<group>"; };
 		EA2EC01C62AA6D028FE1EF59 /* base_record.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = base_record.cpp; sourceTree = "<group>"; };
-		F3E7189C6A824DA4E5C788ED /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = /usr/local/Cellar/openssl/1.0.2h_1/lib/libssl.a; sourceTree = "<group>"; };
 		F8D40BE62AED87BA9883FC7C /* lib_biblereader_objc.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = lib_biblereader_objc.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCFAD86154FFE8B828EA701E /* libcpprest.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcpprest.a; path = /Users/admin/Documents/casablanca/Build_iOS/build.debug/libcpprest.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,12 +44,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6E2451D4EAD4C492200EEAF4 /* libcppnetlib-uri.a in Frameworks */,
-				2248B3500E6B6E435CEC7F56 /* libcrypto.a in Frameworks */,
-				03C5E1F6F6BEF0C199F1ECEC /* libboost_system.a in Frameworks */,
-				2E389D9B95D7B132E25C82DD /* libcppnetlib-client-connections.a in Frameworks */,
-				9845F6D0D863C1CB84FCD140 /* libssl.a in Frameworks */,
-				D33ABEB5D1A926A2ACD084DF /* libcppnetlib-server-parsers.a in Frameworks */,
+				26B06EF47A811057117C9425 /* libcpprest.a in Frameworks */,
+				8D780538438B2FE8C7A94525 /* libcrypto.a in Frameworks */,
+				FD18E0016DD8C0C5A86E5410 /* libssl.a in Frameworks */,
+				0339AEB243294453AC848BFD /* libiconv.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,17 +58,38 @@
 			isa = PBXGroup;
 			children = (
 				57B8F961E9FC8C03B1129997 /* Source */,
-				A5C238AAAE807508F0C660FD /* Frameworks */,
+				5583E38536A12087E5879D45 /* Frameworks */,
 				B48D09B801075C4CCB4324B7 /* Products */,
 				83F8EA3259FE1EEE8CFFB786 /* Build */,
 			);
+			sourceTree = "<group>";
+		};
+		319E7B8A382EBC804CD8F437 /* src/cpp */ = {
+			isa = PBXGroup;
+			children = (
+				EA2EC01C62AA6D028FE1EF59 /* base_record.cpp */,
+				E47DABA8183E9C86CE7700AF /* base_view_model_impl.cpp */,
+				4ECA39B7D80AFF5891CC80B4 /* network_manager_impl.cpp */,
+			);
+			path = src/cpp;
+			sourceTree = "<group>";
+		};
+		5583E38536A12087E5879D45 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCFAD86154FFE8B828EA701E /* libcpprest.a */,
+				4AF0F8EC34A8079622598D65 /* libcrypto.a */,
+				0DB6406E45F56F7200DF31BC /* libiconv.dylib */,
+				B09916F6A44BA414C7E7B9C1 /* libssl.a */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		57B8F961E9FC8C03B1129997 /* Source */ = {
 			isa = PBXGroup;
 			children = (
 				B2A2756E823F15ABF181D074 /* generated-src/objc */,
-				E636C378BB9A93E7A8BFC3D0 /* src/cpp */,
+				319E7B8A382EBC804CD8F437 /* src/cpp */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -88,19 +101,6 @@
 				56BABA1EFEA7FF4754F2CBE4 /* lib_biblereader.gyp */,
 			);
 			name = Build;
-			sourceTree = "<group>";
-		};
-		A5C238AAAE807508F0C660FD /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6688DB870E18BC06FEF5AA09 /* libboost_system.a */,
-				4B2753457F48DBE049D701FD /* libcppnetlib-client-connections.a */,
-				8B68E32C257A64F8075E46D1 /* libcppnetlib-server-parsers.a */,
-				5AFB6BFE555AFC4126E3E99A /* libcppnetlib-uri.a */,
-				AEE227BF388109D7112A65FB /* libcrypto.a */,
-				F3E7189C6A824DA4E5C788ED /* libssl.a */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		B2A2756E823F15ABF181D074 /* generated-src/objc */ = {
@@ -121,17 +121,6 @@
 				F8D40BE62AED87BA9883FC7C /* lib_biblereader_objc.a */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		E636C378BB9A93E7A8BFC3D0 /* src/cpp */ = {
-			isa = PBXGroup;
-			children = (
-				5D0C87DD76CE3F4F2EDAE0E3 /* base64.cpp */,
-				EA2EC01C62AA6D028FE1EF59 /* base_record.cpp */,
-				E47DABA8183E9C86CE7700AF /* base_view_model_impl.cpp */,
-				4ECA39B7D80AFF5891CC80B4 /* network_manager_impl.cpp */,
-			);
-			path = src/cpp;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,10 +172,9 @@
 				41A6FAC65AD69EAD192D9901 /* BRBaseViewModel+Private.mm in Sources */,
 				045B0133C3310009D2159DAD /* BRNetworkListener+Private.mm in Sources */,
 				A4C602F640476CE4E02EF141 /* BRNetworkManager+Private.mm in Sources */,
-				9F17615A756397E97628A74F /* base64.cpp in Sources */,
-				9FADE94AEE72627CE67EACF4 /* base_record.cpp in Sources */,
-				EE31165AC86703C89551788D /* base_view_model_impl.cpp in Sources */,
-				3EA3A2DEF9EDFC47223FFA6E /* network_manager_impl.cpp in Sources */,
+				00C5D33E6C7A72695A3B95F2 /* base_record.cpp in Sources */,
+				90E24DDD385596DCCC4F1706 /* base_view_model_impl.cpp in Sources */,
+				A93572ECE8D0C4003A09162A /* network_manager_impl.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,16 +194,15 @@
 					"./generated-src/objc",
 					"./generated-src/cpp",
 					./src/cpp,
-					/usr/local/Cellar/boost/1.60.0_2/include,
-					"/usr/local/Cellar/cpp-netlib/0.12.0_1/include",
-					/usr/local/Cellar/asio/1.10.6/include,
-					/usr/local/opt/openssl/include,
+					/Users/admin/Documents/casablanca/Release/include,
+					/Users/admin/Documents/casablanca/Build_iOS/boost.framework/Headers,
+					/Users/admin/Documents/casablanca/Build_iOS/openssl/include,
 					"deps/djinni/support-lib/objc",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"/usr/local/Cellar/cpp-netlib/0.12.0_1/lib",
-					/usr/local/Cellar/openssl/1.0.2h_1/lib,
-					/usr/local/Cellar/boost/1.60.0_2/lib,
+					/Users/admin/Documents/casablanca/Build_iOS/build.debug,
+					/Users/admin/Documents/casablanca/Build_iOS/openssl/lib,
+					/usr/local/Cellar/libiconv/1.14/lib,
 				);
 				OTHER_CFLAGS = "-Wall";
 				OTHER_CPLUSPLUSFLAGS = (
@@ -250,16 +237,15 @@
 					"./generated-src/objc",
 					"./generated-src/cpp",
 					./src/cpp,
-					/usr/local/Cellar/boost/1.60.0_2/include,
-					"/usr/local/Cellar/cpp-netlib/0.12.0_1/include",
-					/usr/local/Cellar/asio/1.10.6/include,
-					/usr/local/opt/openssl/include,
+					/Users/admin/Documents/casablanca/Release/include,
+					/Users/admin/Documents/casablanca/Build_iOS/boost.framework/Headers,
+					/Users/admin/Documents/casablanca/Build_iOS/openssl/include,
 					"deps/djinni/support-lib/objc",
 				);
 				LIBRARY_SEARCH_PATHS = (
-					"/usr/local/Cellar/cpp-netlib/0.12.0_1/lib",
-					/usr/local/Cellar/openssl/1.0.2h_1/lib,
-					/usr/local/Cellar/boost/1.60.0_2/lib,
+					/Users/admin/Documents/casablanca/Build_iOS/build.debug,
+					/Users/admin/Documents/casablanca/Build_iOS/openssl/lib,
+					/usr/local/Cellar/libiconv/1.14/lib,
 				);
 				ONLY_ACTIVE_ARCH = YES;
 				OTHER_CFLAGS = "-Wall";

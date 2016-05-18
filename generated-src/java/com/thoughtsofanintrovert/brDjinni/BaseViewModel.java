@@ -8,6 +8,8 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public abstract class BaseViewModel {
     public abstract void setXml(String xml);
 
+    public abstract String getXml();
+
     public static native BaseViewModel create();
 
     private static final class CppProxy extends BaseViewModel
@@ -40,5 +42,13 @@ public abstract class BaseViewModel {
             native_setXml(this.nativeRef, xml);
         }
         private native void native_setXml(long _nativeRef, String xml);
+
+        @Override
+        public String getXml()
+        {
+            assert !this.destroyed.get() : "trying to use a destroyed object";
+            return native_getXml(this.nativeRef);
+        }
+        private native String native_getXml(long _nativeRef);
     }
 }

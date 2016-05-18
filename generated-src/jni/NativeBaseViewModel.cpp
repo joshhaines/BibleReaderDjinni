@@ -38,4 +38,14 @@ CJNIEXPORT void JNICALL Java_com_thoughtsofanintrovert_brDjinni_BaseViewModel_00
     } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, )
 }
 
+CJNIEXPORT jstring JNICALL Java_com_thoughtsofanintrovert_brDjinni_BaseViewModel_00024CppProxy_native_1getXml(JNIEnv* jniEnv, jobject /*this*/, jlong nativeRef)
+{
+    try {
+        DJINNI_FUNCTION_PROLOGUE1(jniEnv, nativeRef);
+        const auto& ref = ::djinni::objectFromHandleAddress<::biblereader::BaseViewModel>(nativeRef);
+        auto r = ref->get_xml();
+        return ::djinni::release(::djinni::String::fromCpp(jniEnv, r));
+    } JNI_TRANSLATE_EXCEPTIONS_RETURN(jniEnv, 0 /* value doesn't matter */)
+}
+
 }  // namespace djinni_generated

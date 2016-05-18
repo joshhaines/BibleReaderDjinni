@@ -6,4 +6,5 @@ base_view_model = interface +c {
   static create(): base_view_model;
 
   set_xml(xml: string);
+  get_xml(): string;
 }

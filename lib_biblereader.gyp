@@ -15,18 +15,15 @@
         "./generated-src/objc",
         "./generated-src/cpp",
         "./src/cpp",
-        "/usr/local/Cellar/boost/1.60.0_2/include",
-        "/usr/local/Cellar/cpp-netlib/0.12.0_1/include",
-        "/usr/local/Cellar/asio/1.10.6/include",
-        "/Users/admin/Documents/OpenSSL-for-iPhone/include"
+        "/Users/admin/Documents/casablanca/Release/include",
+        "/Users/admin/Documents/casablanca/Build_iOS/boost.framework/Headers",
+        "/Users/admin/Documents/casablanca/Build_iOS/openssl/include",
       ],
       "libraries": [
-        "/usr/local/Cellar/cpp-netlib/0.12.0_1/lib/libcppnetlib-uri.a",
-        "/Users/admin/Documents/OpenSSL-for-iPhone/lib/libcrypto.a",
-        "/usr/local/Cellar/boost/1.60.0_2/lib/libboost_system.a",
-        "/usr/local/Cellar/cpp-netlib/0.12.0_1/lib/libcppnetlib-client-connections.a",
-        "/Users/admin/Documents/OpenSSL-for-iPhone/lib/libssl.a",
-        "/usr/local/Cellar/cpp-netlib/0.12.0_1/lib/libcppnetlib-server-parsers.a"
+        "/Users/admin/Documents/casablanca/Build_iOS/build.debug/libcpprest.a",
+        "/Users/admin/Documents/casablanca/Build_iOS/openssl/lib/libcrypto.a",
+        "/Users/admin/Documents/casablanca/Build_iOS/openssl/lib/libssl.a",
+        "/usr/local/Cellar/libiconv/1.14/lib/libiconv.dylib",
       ],
       'xcode_settings': {
         'OTHER_CPLUSPLUSFLAGS' : ['-std=c++1y'],

@@ -13,6 +13,7 @@
 #include <cpprest/http_client.h>
 #include <cpprest/filestream.h>
 #include <istream>
+#include "base_view_model_impl.hpp"
 
 using namespace biblereader;
 using namespace utility;
@@ -77,13 +78,17 @@ void NetworkManagerImpl::get_bible_books(const std::shared_ptr<NetworkListener> 
           {
               printf("Received response status code:%u\n", response.status_code());
               printf("response: %s", response.to_string().c_str());
-              return response.body().read_to_end(fileStream->streambuf());
+              return response.extract_string();
+              //              return response.body().read_to_end(fileStream->streambuf());
           })
-    .then([=](size_t)
+    .then([=](utility::string_t body)
           {
+              std::shared_ptr<BaseViewModelImpl> viewModel = std::make_shared<BaseViewModelImpl>();
+              viewModel->set_xml(body);
+              
               if (listener) {
-                              listener->complete(NULL);
-                          }
+                  listener->complete(viewModel);
+              }
               return fileStream->close();
           });
     

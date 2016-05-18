@@ -19,6 +19,7 @@ namespace biblereader {
         BaseViewModelImpl();
         
         void set_xml(const std::string & xml);
+        std::string get_xml();
     private:
         std::shared_ptr<BaseRecord> viewModel;
     };
