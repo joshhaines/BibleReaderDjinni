@@ -1,0 +1,37 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "C29698989B567A03C9BDCD29075086DB31A934DB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "C29698989B567A03C9BDCD29075086DB31A934DB" : 0,
+    "F1046C3FFA3251AB817E67B1CFB4EB5AB732F75D" : 0,
+    "A1292E74EC31657AE8BB3669F3CC14FA14E40259" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7A88DA6A-C847-4143-80AA-1E7CDAEDA9AB",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "C29698989B567A03C9BDCD29075086DB31A934DB" : "BibleReaderDjinni\/",
+    "F1046C3FFA3251AB817E67B1CFB4EB5AB732F75D" : "casablanca\/",
+    "A1292E74EC31657AE8BB3669F3CC14FA14E40259" : "BibleReader\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BibleReaderCPP",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BibleReaderCPP\/BibleReaderCPP.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/joshhaines\/BibleReader.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A1292E74EC31657AE8BB3669F3CC14FA14E40259"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/joshhaines\/BibleReaderDjinni.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "C29698989B567A03C9BDCD29075086DB31A934DB"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Microsoft\/cpprestsdk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F1046C3FFA3251AB817E67B1CFB4EB5AB732F75D"
+    }
+  ]
+}
