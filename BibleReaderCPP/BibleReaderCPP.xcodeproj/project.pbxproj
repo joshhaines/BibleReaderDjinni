@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		840810051CEA2DDD0063D134 /* base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 840810031CEA2DDD0063D134 /* base64.cpp */; };
 		84288E6A1CE672FB005317B3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84288E691CE672FB005317B3 /* main.cpp */; };
 		84288E761CE673AA005317B3 /* network_manager_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84288E741CE673AA005317B3 /* network_manager_impl.cpp */; };
 		84288E831CE8F4A3005317B3 /* base_view_model_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84288E811CE8F4A3005317B3 /* base_view_model_impl.cpp */; };
@@ -38,8 +37,6 @@
 		84080FDF1CE949150063D134 /* base_view_model.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = base_view_model.hpp; sourceTree = "<group>"; };
 		84080FE01CE949150063D134 /* network_listener.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = network_listener.hpp; sourceTree = "<group>"; };
 		84080FE11CE949150063D134 /* network_manager.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = network_manager.hpp; sourceTree = "<group>"; };
-		840810031CEA2DDD0063D134 /* base64.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = base64.cpp; sourceTree = "<group>"; };
-		840810041CEA2DDD0063D134 /* base64.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = base64.hpp; sourceTree = "<group>"; };
 		84288E661CE672FB005317B3 /* BibleReaderCPP */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BibleReaderCPP; sourceTree = BUILT_PRODUCTS_DIR; };
 		84288E691CE672FB005317B3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		84288E741CE673AA005317B3 /* network_manager_impl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = network_manager_impl.cpp; sourceTree = "<group>"; };
@@ -75,15 +72,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		840810021CEA2DCF0063D134 /* Base64 */ = {
-			isa = PBXGroup;
-			children = (
-				840810031CEA2DDD0063D134 /* base64.cpp */,
-				840810041CEA2DDD0063D134 /* base64.hpp */,
-			);
-			name = Base64;
-			sourceTree = "<group>";
-		};
 		84288E5D1CE672FB005317B3 = {
 			isa = PBXGroup;
 			children = (
@@ -132,7 +120,6 @@
 		84288E721CE67333005317B3 /* impl */ = {
 			isa = PBXGroup;
 			children = (
-				840810021CEA2DCF0063D134 /* Base64 */,
 				84288E801CE8F48A005317B3 /* ViewModels */,
 				84288E771CE673B5005317B3 /* BrNetworkManager */,
 			);
@@ -219,7 +206,6 @@
 				84288E761CE673AA005317B3 /* network_manager_impl.cpp in Sources */,
 				84288E831CE8F4A3005317B3 /* base_view_model_impl.cpp in Sources */,
 				84288E6A1CE672FB005317B3 /* main.cpp in Sources */,
-				840810051CEA2DDD0063D134 /* base64.cpp in Sources */,
 				84288E871CE8F6F8005317B3 /* base_record.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

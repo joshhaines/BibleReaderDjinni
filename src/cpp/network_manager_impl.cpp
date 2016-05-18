@@ -12,7 +12,7 @@
 #include "network_manager_impl.hpp"
 #include <cpprest/http_client.h>
 #include <cpprest/filestream.h>
-#include "base64.hpp"
+#include <istream>
 
 using namespace biblereader;
 using namespace utility;
@@ -62,8 +62,13 @@ void NetworkManagerImpl::get_bible_books(const std::shared_ptr<NetworkListener> 
               http_client client(U("https://bibles.org/v2/verses/eng-GNTD:Acts.8.34.xml"));
               http_request request(methods::GET);
 //              http_response response = client.request(methods::GET).get();
-              const std::string key = "WcBbphrvgP22kmgZwaCFtGeuBvZGXzf7xtPPallq:X";
-              std::string encoded = base64_encode(reinterpret_cast<const unsigned char*>(key.c_str()), (unsigned int) key.length());
+              std::string key = "WcBbphrvgP22kmgZwaCFtGeuBvZGXzf7xtPPallq:X";
+              
+              std::vector<unsigned char> bytes(key.begin(), key.end());
+              bytes.push_back('\0');
+              
+              std::string encoded = conversions::to_base64(bytes);
+//              std::string encoded = base64_encode(reinterpret_cast<const unsigned char*>(key.c_str()), (unsigned int) key.length());
               std::string header = "Basic " + encoded;
               request.headers().add(U("Authorization"), U(header));
               return client.request(request);
@@ -81,6 +86,12 @@ void NetworkManagerImpl::get_bible_books(const std::shared_ptr<NetworkListener> 
                           }
               return fileStream->close();
           });
+    
+//    try {
+//        requestTask.wait();
+//    } catch (std::exception & e) {
+//        
+//    }
     
     //    std::string data;
     //
